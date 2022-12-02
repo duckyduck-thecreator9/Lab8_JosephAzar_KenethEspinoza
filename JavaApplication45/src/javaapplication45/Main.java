@@ -42,8 +42,6 @@ public class Main extends javax.swing.JFrame {
             tresj1.addItem("Offensive");
         
         this.setLocationRelativeTo(this);
-        ad.cargarArchivo();
-        System.out.println(ad.getJugadores());
     }
 
     private void aparecer_crearj() {
@@ -417,7 +415,7 @@ public class Main extends javax.swing.JFrame {
     private void jt_descripcionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jt_descripcionActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jt_descripcionActionPerformed
-
+    
     private void jComboBox3ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jComboBox3ItemStateChanged
         // TODO add your handling code here:
         if (jComboBox3.getSelectedItem().equals("Barbaro") ) {
@@ -529,28 +527,28 @@ public class Main extends javax.swing.JFrame {
         if (jComboBox3.getSelectedItem().equals("Barbaro") ) {
                
             Barbaro b = new Barbaro(jt_nombre.getText(), (String)jc_nacionalidad.getSelectedItem(), (String)jComboBox2.getSelectedItem(), (String)jComboBox3.getSelectedItem(), jt_descripcion.getText(), Double.parseDouble(jt_descripcion1.getText()), Integer.parseInt(jt_descripcion2.getText()), Double.parseDouble(jt_descripcion3.getText()), hp, (String)tresj.getSelectedItem(), Integer.parseInt(dost.getText()), (String)tresj1.getSelectedItem());
-            admin_jugador a = new admin_jugador("./Jugadores\\Barbaro\\" + jt_nombre.getText() + ".cbm");
+            admin_jugador a = new admin_jugador("./Jugadores\\Barbaro\\barbaros.cbm");
             a.cargarArchivo();
             a.setJugador(b);
             a.escribirArchivo();
             System.out.println(b);
         } else if (jComboBox3.getSelectedItem().equals("Clerigo") ) {
             Clerigo c = new Clerigo(unot.getText(), dost.getText(), jt_nombre.getText(), (String)jc_nacionalidad.getSelectedItem(), (String)jComboBox2.getSelectedItem(), (String)jComboBox3.getSelectedItem(), jt_descripcion.getText(), Double.parseDouble(jt_descripcion1.getText()), Integer.parseInt(jt_descripcion2.getText()), Double.parseDouble(jt_descripcion3.getText()), hp, (String)tresj1.getSelectedItem());
-            admin_jugador a = new admin_jugador("./Jugadores\\Clerigo\\"+jt_nombre.getText()+".cbm");
+            admin_jugador a = new admin_jugador("./Jugadores\\Clerigo\\clerigos.cbm");
             a.cargarArchivo();
             a.setJugador(c);
             a.escribirArchivo();
             System.out.println(c);
         } else if (jComboBox3.getSelectedItem().equals("Mago") ) { 
             Mago m = new Mago(jt_nombre.getText(), (String)jc_nacionalidad.getSelectedItem(), (String)jComboBox2.getSelectedItem(), (String)jComboBox3.getSelectedItem(), jt_descripcion.getText(), Double.parseDouble(jt_descripcion1.getText()), Integer.parseInt(jt_descripcion2.getText()), Double.parseDouble(jt_descripcion3.getText()), hp, (String)tresj.getSelectedItem(), (String)tresj1.getSelectedItem());
-            admin_jugador a = new admin_jugador("./Jugadores\\Mago\\"+jt_nombre.getText()+".cbm");
+            admin_jugador a = new admin_jugador("./Jugadores\\Mago\\magos.cbm");
             a.cargarArchivo();
             a.setJugador(m);
             a.escribirArchivo();
             System.out.println(m);
         }else if (jComboBox3.getSelectedItem().equals("Picaro") ) {
             Picaro c = new Picaro(jt_nombre.getText(), (String)jc_nacionalidad.getSelectedItem(), (String)jComboBox2.getSelectedItem(), (String)jComboBox3.getSelectedItem(), jt_descripcion.getText(), Double.parseDouble(jt_descripcion1.getText()), Integer.parseInt(jt_descripcion2.getText()), Double.parseDouble(jt_descripcion3.getText()), hp, (String)tresj.getSelectedItem(), Integer.parseInt(dost.getText()), (String) tresj1.getSelectedItem());
-            admin_jugador a = new admin_jugador("./Jugadores\\Picaro\\"+jt_nombre.getText()+".cbm");
+            admin_jugador a = new admin_jugador("./Jugadores\\Picaro\\picaros.cbm");
             a.cargarArchivo();
             a.setJugador(c);
             a.escribirArchivo();
@@ -638,6 +636,6 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel uno;
     private javax.swing.JTextField unot;
     // End of variables declaration//GEN-END:variables
-Random r = new Random();
-    static admin_jugador ad = new admin_jugador("./Jugadores\\Clerigo");
+
+    Random r = new Random();
 }
