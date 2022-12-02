@@ -56,6 +56,8 @@ public class admin_jugador {
             jugadores = new ArrayList();
             Jugador temp;
             if (archivo.exists()) {
+                
+                System.out.println("Archivo encontrado");
                 FileInputStream entrada
                         = new FileInputStream(archivo);
                 ObjectInputStream objeto

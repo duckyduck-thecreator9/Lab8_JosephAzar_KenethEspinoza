@@ -5,11 +5,13 @@
  */
 package javaapplication45;
 
+import java.io.Serializable;
+
 /**
  *
  * @author joseph
  */
-public class Jugador {
+public class Jugador implements Serializable{
     private String nombre;
     private String nacionalidad;
     private String raza;

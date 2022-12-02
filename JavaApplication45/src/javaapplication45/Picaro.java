@@ -4,12 +4,13 @@
  * and open the template in the editor.
  */
 package javaapplication45;
+import java.io.Serializable;
 import java.util.Random;
 /**
  *
  * @author joseph
  */
-public class Picaro extends Jugador{
+public class Picaro extends Jugador implements Serializable{
     Random r = new Random();
     private int ac = 50;
     private int cs = 80;

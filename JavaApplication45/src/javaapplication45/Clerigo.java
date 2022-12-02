@@ -5,13 +5,14 @@
  */
 package javaapplication45;
 
+import java.io.Serializable;
 import java.util.Random;
 
 /**
  *
  * @author joseph
  */
-public class Clerigo extends Jugador{
+public class Clerigo extends Jugador implements Serializable{
     Random r = new Random();
     private int ac = 40;
     private int cs = 97;
