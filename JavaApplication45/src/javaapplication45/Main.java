@@ -6,6 +6,7 @@
 package javaapplication45;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Random;
 import javax.swing.JOptionPane;
 
@@ -42,6 +43,16 @@ public class Main extends javax.swing.JFrame {
             tresj1.addItem("Offensive");
         
         this.setLocationRelativeTo(this);
+        barbaros.cargarArchivo();
+        magos.cargarArchivo();
+        clerigos.cargarArchivo();
+        picaros.cargarArchivo();
+        
+        Jugadores.add(barbaros.getJugadores());
+        Jugadores.add(magos.getJugadores());
+        Jugadores.add(clerigos.getJugadores());
+        Jugadores.add(picaros.getJugadores());
+        System.out.println(Jugadores);
     }
 
     private void aparecer_crearj() {
@@ -93,11 +104,9 @@ public class Main extends javax.swing.JFrame {
         jButton4 = new javax.swing.JButton();
         tres1 = new javax.swing.JLabel();
         tresj1 = new javax.swing.JComboBox<>();
-        Verj = new javax.swing.JDialog();
         Jugar = new javax.swing.JDialog();
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -325,17 +334,6 @@ public class Main extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
-        javax.swing.GroupLayout VerjLayout = new javax.swing.GroupLayout(Verj.getContentPane());
-        Verj.getContentPane().setLayout(VerjLayout);
-        VerjLayout.setHorizontalGroup(
-            VerjLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        VerjLayout.setVerticalGroup(
-            VerjLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
-
         javax.swing.GroupLayout JugarLayout = new javax.swing.GroupLayout(Jugar.getContentPane());
         Jugar.getContentPane().setLayout(JugarLayout);
         JugarLayout.setHorizontalGroup(
@@ -360,9 +358,6 @@ public class Main extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton2.setText("Ver Jugadores");
-
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jButton3.setText("Iniciar juego");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -385,9 +380,6 @@ public class Main extends javax.swing.JFrame {
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(66, 66, 66)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(66, 66, 66)
                         .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(65, Short.MAX_VALUE))
         );
@@ -398,11 +390,9 @@ public class Main extends javax.swing.JFrame {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(17, 17, 17)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
@@ -415,7 +405,7 @@ public class Main extends javax.swing.JFrame {
     private void jt_descripcionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jt_descripcionActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jt_descripcionActionPerformed
-    
+
     private void jComboBox3ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jComboBox3ItemStateChanged
         // TODO add your handling code here:
         if (jComboBox3.getSelectedItem().equals("Barbaro") ) {
@@ -527,28 +517,28 @@ public class Main extends javax.swing.JFrame {
         if (jComboBox3.getSelectedItem().equals("Barbaro") ) {
                
             Barbaro b = new Barbaro(jt_nombre.getText(), (String)jc_nacionalidad.getSelectedItem(), (String)jComboBox2.getSelectedItem(), (String)jComboBox3.getSelectedItem(), jt_descripcion.getText(), Double.parseDouble(jt_descripcion1.getText()), Integer.parseInt(jt_descripcion2.getText()), Double.parseDouble(jt_descripcion3.getText()), hp, (String)tresj.getSelectedItem(), Integer.parseInt(dost.getText()), (String)tresj1.getSelectedItem());
-            admin_jugador a = new admin_jugador("./Jugadores\\Barbaro\\barbaros.cbm");
+            admin_jugador a = new admin_jugador("./Jugadores\\barbaros.cbm");
             a.cargarArchivo();
             a.setJugador(b);
             a.escribirArchivo();
             System.out.println(b);
         } else if (jComboBox3.getSelectedItem().equals("Clerigo") ) {
             Clerigo c = new Clerigo(unot.getText(), dost.getText(), jt_nombre.getText(), (String)jc_nacionalidad.getSelectedItem(), (String)jComboBox2.getSelectedItem(), (String)jComboBox3.getSelectedItem(), jt_descripcion.getText(), Double.parseDouble(jt_descripcion1.getText()), Integer.parseInt(jt_descripcion2.getText()), Double.parseDouble(jt_descripcion3.getText()), hp, (String)tresj1.getSelectedItem());
-            admin_jugador a = new admin_jugador("./Jugadores\\Clerigo\\clerigos.cbm");
+            admin_jugador a = new admin_jugador("./Jugadores\\clerigos.cbm");
             a.cargarArchivo();
             a.setJugador(c);
             a.escribirArchivo();
             System.out.println(c);
         } else if (jComboBox3.getSelectedItem().equals("Mago") ) { 
             Mago m = new Mago(jt_nombre.getText(), (String)jc_nacionalidad.getSelectedItem(), (String)jComboBox2.getSelectedItem(), (String)jComboBox3.getSelectedItem(), jt_descripcion.getText(), Double.parseDouble(jt_descripcion1.getText()), Integer.parseInt(jt_descripcion2.getText()), Double.parseDouble(jt_descripcion3.getText()), hp, (String)tresj.getSelectedItem(), (String)tresj1.getSelectedItem());
-            admin_jugador a = new admin_jugador("./Jugadores\\Mago\\magos.cbm");
+            admin_jugador a = new admin_jugador("./Jugadores\\magos.cbm");
             a.cargarArchivo();
             a.setJugador(m);
             a.escribirArchivo();
             System.out.println(m);
         }else if (jComboBox3.getSelectedItem().equals("Picaro") ) {
             Picaro c = new Picaro(jt_nombre.getText(), (String)jc_nacionalidad.getSelectedItem(), (String)jComboBox2.getSelectedItem(), (String)jComboBox3.getSelectedItem(), jt_descripcion.getText(), Double.parseDouble(jt_descripcion1.getText()), Integer.parseInt(jt_descripcion2.getText()), Double.parseDouble(jt_descripcion3.getText()), hp, (String)tresj.getSelectedItem(), Integer.parseInt(dost.getText()), (String) tresj1.getSelectedItem());
-            admin_jugador a = new admin_jugador("./Jugadores\\Picaro\\picaros.cbm");
+            admin_jugador a = new admin_jugador("./Jugadores\\picaros.cbm");
             a.cargarArchivo();
             a.setJugador(c);
             a.escribirArchivo();
@@ -604,11 +594,9 @@ public class Main extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDialog Crearj;
     private javax.swing.JDialog Jugar;
-    private javax.swing.JDialog Verj;
     private javax.swing.JLabel dos;
     private javax.swing.JTextField dost;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JComboBox<String> jComboBox2;
@@ -636,6 +624,11 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel uno;
     private javax.swing.JTextField unot;
     // End of variables declaration//GEN-END:variables
-
-    Random r = new Random();
+Random r = new Random();
+    admin_jugador barbaros = new admin_jugador("./Jugadores\\barbaros.cbm");
+    admin_jugador magos = new admin_jugador("./Jugadores\\magos.cbm");
+    admin_jugador clerigos = new admin_jugador("./Jugadores\\clerigos.cbm");
+    admin_jugador picaros = new admin_jugador("./Jugadores\\picaros.cbm");
+    
+    ArrayList Jugadores = new ArrayList();
 }
