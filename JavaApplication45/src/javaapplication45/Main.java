@@ -815,6 +815,8 @@ public class Main extends javax.swing.JFrame {
 
     private void atack1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atack1ActionPerformed
         // TODO add your handling code here:
+        magos.getJugadores().get(0).setHp(0);
+        barbaros.getJugadores().get(0).setHp(0);
         Jugar s = new Jugar(atack1, atack2, defend1, defend2, jLabel6, jLabel5, jLabel3, clase1, tipo1, ac1, hp1, cs1, clase2, tipo2, ac2, hp2, cs2, (Barbaro)barbaros.getJugadores().get(0), (Mago)magos.getJugadores().get(0));
         Thread proceso1 = new Thread(s);
         proceso1.start();
