@@ -11,6 +11,8 @@ import java.util.Random;
  * @author joseph
  */
 public class Mago extends Jugador implements Serializable{
+    
+    private static final long SerialVersionUID = 343L;
     Random r = new Random();
     private int ac = 20;
     private int cs = 0;

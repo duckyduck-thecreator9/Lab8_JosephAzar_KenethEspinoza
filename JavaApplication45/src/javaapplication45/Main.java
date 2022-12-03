@@ -62,6 +62,13 @@ public class Main extends javax.swing.JFrame {
      Crearj.setVisible(rootPaneCheckingEnabled);
     }
     
+    private void aparecer_jugar() {
+     Jugar.setModal(true);
+     Jugar.pack();
+     Jugar.setLocationRelativeTo(this);
+     Jugar.setVisible(rootPaneCheckingEnabled);
+    }
+    
     private void aparecer_main() {
      this.pack();
      this.setLocationRelativeTo(this);
@@ -105,6 +112,10 @@ public class Main extends javax.swing.JFrame {
         tres1 = new javax.swing.JLabel();
         tresj1 = new javax.swing.JComboBox<>();
         Jugar = new javax.swing.JDialog();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -334,15 +345,41 @@ public class Main extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
+        jLabel3.setText("jLabel3");
+
+        jLabel5.setText("jLabel5");
+
+        jLabel6.setText("jLabel5");
+
+        jButton2.setBackground(java.awt.Color.red);
+
         javax.swing.GroupLayout JugarLayout = new javax.swing.GroupLayout(Jugar.getContentPane());
         Jugar.getContentPane().setLayout(JugarLayout);
         JugarLayout.setHorizontalGroup(
             JugarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(JugarLayout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+            .addGroup(JugarLayout.createSequentialGroup()
+                .addGap(293, 293, 293)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         JugarLayout.setVerticalGroup(
             JugarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(JugarLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(JugarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -400,6 +437,8 @@ public class Main extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        this.setVisible(false);
+        aparecer_jugar();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jt_descripcionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jt_descripcionActionPerformed
@@ -597,6 +636,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel dos;
     private javax.swing.JTextField dost;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JComboBox<String> jComboBox2;
@@ -607,7 +647,10 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;

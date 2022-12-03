@@ -12,7 +12,9 @@ import java.util.Random;
  *
  * @author joseph
  */
-public class Clerigo extends Jugador implements Serializable{
+public class Clerigo extends Jugador implements Serializable{ 
+    
+    private static final long SerialVersionUID = 343L;
     Random r = new Random();
     private int ac = 40;
     private int cs = 97;
