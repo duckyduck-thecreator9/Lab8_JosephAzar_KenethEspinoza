@@ -43,6 +43,7 @@ public class Main extends javax.swing.JFrame {
             tresj1.addItem("Offensive");
         
         this.setLocationRelativeTo(this);
+<<<<<<< Updated upstream
         barbaros.cargarArchivo();
         magos.cargarArchivo();
         clerigos.cargarArchivo();
@@ -53,6 +54,10 @@ public class Main extends javax.swing.JFrame {
         Jugadores.add(clerigos.getJugadores());
         Jugadores.add(picaros.getJugadores());
         System.out.println(Jugadores);
+=======
+        a.cargarArchivo();
+        System.out.println(a.getJugadores());
+>>>>>>> Stashed changes
     }
 
     private void aparecer_crearj() {
@@ -667,6 +672,7 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel uno;
     private javax.swing.JTextField unot;
     // End of variables declaration//GEN-END:variables
+<<<<<<< Updated upstream
 Random r = new Random();
     admin_jugador barbaros = new admin_jugador("./Jugadores\\barbaros.cbm");
     admin_jugador magos = new admin_jugador("./Jugadores\\magos.cbm");
@@ -674,4 +680,10 @@ Random r = new Random();
     admin_jugador picaros = new admin_jugador("./Jugadores\\picaros.cbm");
     
     ArrayList Jugadores = new ArrayList();
+=======
+
+    Random r = new Random();
+    
+    admin_jugador a = new admin_jugador (":/barbaros.cbm");
+>>>>>>> Stashed changes
 }
