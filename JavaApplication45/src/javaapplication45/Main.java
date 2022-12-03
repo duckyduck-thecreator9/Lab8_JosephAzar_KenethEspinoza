@@ -8,6 +8,7 @@ package javaapplication45;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Random;
+import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 
 /**
@@ -53,6 +54,7 @@ public class Main extends javax.swing.JFrame {
         Jugadores.add(clerigos.getJugadores());
         Jugadores.add(picaros.getJugadores());
         System.out.println(Jugadores);
+        
     }
 
     private void aparecer_crearj() {
@@ -116,6 +118,30 @@ public class Main extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        defend1 = new javax.swing.JButton();
+        atack1 = new javax.swing.JButton();
+        defend2 = new javax.swing.JButton();
+        atack2 = new javax.swing.JButton();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        clase1 = new javax.swing.JLabel();
+        tipo1 = new javax.swing.JLabel();
+        ac1 = new javax.swing.JLabel();
+        hp1 = new javax.swing.JLabel();
+        cs1 = new javax.swing.JLabel();
+        clase2 = new javax.swing.JLabel();
+        tipo2 = new javax.swing.JLabel();
+        ac2 = new javax.swing.JLabel();
+        hp2 = new javax.swing.JLabel();
+        cs2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -345,13 +371,108 @@ public class Main extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
+        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel3.setText("jLabel3");
 
+        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel5.setText("jLabel5");
 
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel6.setText("jLabel5");
 
         jButton2.setBackground(java.awt.Color.red);
+
+        jLabel14.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel14.setText("Tipo");
+
+        jLabel15.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel15.setText("Clase");
+
+        jLabel16.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel16.setText("HP");
+
+        jLabel17.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel17.setText("AC");
+
+        jLabel18.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel18.setText("CS");
+
+        defend1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        defend1.setText("Defend");
+        defend1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                defend1ActionPerformed(evt);
+            }
+        });
+
+        atack1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        atack1.setText("Atack");
+        atack1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atack1ActionPerformed(evt);
+            }
+        });
+
+        defend2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        defend2.setText("Defend");
+        defend2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                defend2ActionPerformed(evt);
+            }
+        });
+
+        atack2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        atack2.setText("Atack");
+        atack2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                atack2ActionPerformed(evt);
+            }
+        });
+
+        jLabel19.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel19.setText("CS");
+
+        jLabel20.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel20.setText("HP");
+
+        jLabel21.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel21.setText("AC");
+
+        jLabel22.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel22.setText("Tipo");
+
+        jLabel23.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel23.setText("Clase");
+
+        clase1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        clase1.setText("clase1");
+
+        tipo1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        tipo1.setText("tipo1");
+
+        ac1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        ac1.setText("ac1");
+
+        hp1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        hp1.setText("hp1");
+
+        cs1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        cs1.setText("cs1");
+
+        clase2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        clase2.setText("clase2");
+
+        tipo2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        tipo2.setText("tipo2");
+
+        ac2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        ac2.setText("ac2");
+
+        hp2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        hp2.setText("hp2");
+
+        cs2.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        cs2.setText("cs2");
 
         javax.swing.GroupLayout JugarLayout = new javax.swing.GroupLayout(Jugar.getContentPane());
         Jugar.getContentPane().setLayout(JugarLayout);
@@ -362,24 +483,117 @@ public class Main extends javax.swing.JFrame {
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
             .addGroup(JugarLayout.createSequentialGroup()
-                .addGap(293, 293, 293)
+                .addGroup(JugarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(JugarLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(JugarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel15)
+                            .addComponent(jLabel18)
+                            .addComponent(jLabel16)
+                            .addComponent(jLabel17)
+                            .addComponent(jLabel14))
+                        .addGap(18, 18, 18)
+                        .addGroup(JugarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tipo1, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ac1, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(hp1, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cs1, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(clase1, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(JugarLayout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addComponent(defend1, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JugarLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(atack1, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(18, 18, 18)
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(JugarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(defend2, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(atack2, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(JugarLayout.createSequentialGroup()
+                        .addGroup(JugarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel22)
+                            .addComponent(jLabel20)
+                            .addComponent(jLabel21)
+                            .addComponent(jLabel23)
+                            .addComponent(jLabel19))
+                        .addGap(18, 18, 18)
+                        .addGroup(JugarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(cs2, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tipo2, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ac2, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(hp2, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(clase2, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         JugarLayout.setVerticalGroup(
             JugarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(JugarLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(JugarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(JugarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(JugarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(JugarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 360, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JugarLayout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(JugarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JugarLayout.createSequentialGroup()
+                                .addGroup(JugarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(clase1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(30, 30, 30)
+                                .addGroup(JugarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel14)
+                                    .addComponent(tipo1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(30, 30, 30)
+                                .addGroup(JugarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel17)
+                                    .addComponent(ac1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(JugarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel16)
+                                    .addComponent(hp1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(30, 30, 30)
+                                .addGroup(JugarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel18)
+                                    .addComponent(cs1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(27, 27, 27)
+                                .addComponent(atack1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(defend1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, JugarLayout.createSequentialGroup()
+                                .addGroup(JugarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(jLabel23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(clase2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(29, 29, 29)
+                                .addGroup(JugarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel22)
+                                    .addComponent(tipo2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(29, 29, 29)
+                                .addGroup(JugarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel21)
+                                    .addComponent(ac2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(30, 30, 30)
+                                .addGroup(JugarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel20)
+                                    .addComponent(hp2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(30, 30, 30)
+                                .addGroup(JugarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel19)
+                                    .addComponent(cs2))
+                                .addGap(23, 23, 23)
+                                .addComponent(atack2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(17, 17, 17)
+                                .addComponent(defend2, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(30, 30, 30))))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -437,8 +651,12 @@ public class Main extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
+        Jugar s = new Jugar(atack1, atack2, defend1, defend2, jLabel6, jLabel5, jLabel3, clase1, tipo1, ac1, hp1, cs1, clase2, tipo2, ac2, hp2, cs2, (Barbaro)barbaros.getJugadores().get(0), (Mago)magos.getJugadores().get(0));
+        Thread proceso1 = new Thread(s);
+        proceso1.start();
         this.setVisible(false);
         aparecer_jugar();
+        
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jt_descripcionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jt_descripcionActionPerformed
@@ -595,6 +813,31 @@ public class Main extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_tresj1ActionPerformed
 
+    private void atack1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atack1ActionPerformed
+        // TODO add your handling code here:
+        Jugar s = new Jugar(atack1, atack2, defend1, defend2, jLabel6, jLabel5, jLabel3, clase1, tipo1, ac1, hp1, cs1, clase2, tipo2, ac2, hp2, cs2, (Barbaro)barbaros.getJugadores().get(0), (Mago)magos.getJugadores().get(0));
+        Thread proceso1 = new Thread(s);
+        proceso1.start();
+    }//GEN-LAST:event_atack1ActionPerformed
+
+    private void atack2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_atack2ActionPerformed
+        // TODO add your handling code here:
+        Jugar2 s = new Jugar2(atack1, atack2, defend1, defend2, jLabel6, jLabel5, jLabel3, clase1, tipo1, ac1, hp1, cs1, clase2, tipo2, ac2, hp2, cs2, (Barbaro)barbaros.getJugadores().get(0), (Mago)magos.getJugadores().get(0));
+        Thread proceso1 = new Thread(s);
+        proceso1.start();
+    }//GEN-LAST:event_atack2ActionPerformed
+
+    private void defend1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_defend1ActionPerformed
+        // TODO add your handling code here:
+        Jugar s = new Jugar(atack1, atack2, defend1, defend2, jLabel6, jLabel5, jLabel3, clase1, tipo1, ac1, hp1, cs1, clase2, tipo2, ac2, hp2, cs2, (Barbaro)barbaros.getJugadores().get(0), (Mago)magos.getJugadores().get(0));
+        Thread proceso1 = new Thread(s);
+        proceso1.start();
+    }//GEN-LAST:event_defend1ActionPerformed
+
+    private void defend2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_defend2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_defend2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -633,8 +876,20 @@ public class Main extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDialog Crearj;
     private javax.swing.JDialog Jugar;
+    private javax.swing.JLabel ac1;
+    private javax.swing.JLabel ac2;
+    private javax.swing.JButton atack1;
+    private javax.swing.JButton atack2;
+    private javax.swing.JLabel clase1;
+    private javax.swing.JLabel clase2;
+    private javax.swing.JLabel cs1;
+    private javax.swing.JLabel cs2;
+    private javax.swing.JButton defend1;
+    private javax.swing.JButton defend2;
     private javax.swing.JLabel dos;
     private javax.swing.JTextField dost;
+    private javax.swing.JLabel hp1;
+    private javax.swing.JLabel hp2;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
@@ -646,7 +901,17 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -660,6 +925,8 @@ public class Main extends javax.swing.JFrame {
     private javax.swing.JTextField jt_descripcion2;
     private javax.swing.JTextField jt_descripcion3;
     private javax.swing.JTextField jt_nombre;
+    private javax.swing.JLabel tipo1;
+    private javax.swing.JLabel tipo2;
     private javax.swing.JLabel tres;
     private javax.swing.JLabel tres1;
     private javax.swing.JComboBox<String> tresj;
@@ -674,4 +941,14 @@ Random r = new Random();
     admin_jugador picaros = new admin_jugador("./Jugadores\\picaros.cbm");
     
     ArrayList Jugadores = new ArrayList();
+
+    public JDialog getJugar() {
+        return Jugar;
+    }
+
+    public void setJugar(JDialog Jugar) {
+        this.Jugar = Jugar;
+    }
+    
+    
 }

@@ -14,14 +14,14 @@ import javax.swing.JLabel;
  *
  * @author joseph
  */
-public class Jugar implements Runnable {
+public class Jugar2 implements Runnable {
 
     private JButton atack1, atack2, defend1, defend2;
     private JLabel j1, j2, enmedio, clase1, tipo1, ac1, hp1, cs1, clase2, tipo2, ac2, hp2, cs2;
     private Barbaro jugador1;
     private Mago jugador2;
 
-    public Jugar(JButton atack1, JButton atack2, JButton defend1, JButton defend2, JLabel j1, JLabel j2, JLabel enmedio, JLabel clase1, JLabel tipo1, JLabel ac1, JLabel hp1, JLabel cs1, JLabel clase2, JLabel tipo2, JLabel ac2, JLabel hp2, JLabel cs2, Barbaro jugador1, Mago jugador2) {
+    public Jugar2(JButton atack1, JButton atack2, JButton defend1, JButton defend2, JLabel j1, JLabel j2, JLabel enmedio, JLabel clase1, JLabel tipo1, JLabel ac1, JLabel hp1, JLabel cs1, JLabel clase2, JLabel tipo2, JLabel ac2, JLabel hp2, JLabel cs2, Barbaro jugador1, Mago jugador2) {
         this.atack1 = atack1;
         this.atack2 = atack2;
         this.defend1 = defend1;
@@ -224,8 +224,8 @@ public class Jugar implements Runnable {
         hp2.setText( jugador2.getHp() + "" );
         cs2.setText(jugador2.getCs() + "" );
         
-        atack2.disable();
-        defend2.disable();
+        atack1.disable();
+        defend1.disable();
         
         
     }

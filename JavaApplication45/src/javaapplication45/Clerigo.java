@@ -14,7 +14,7 @@ import java.util.Random;
  */
 public class Clerigo extends Jugador implements Serializable{ 
     
-    private static final long SerialVersionUID = 343L;
+    //private static final long SerialVersionUID = 343L;
     Random r = new Random();
     private int ac = 40;
     private int cs = 97;

@@ -12,7 +12,7 @@ import java.util.Random;
  */
 public class Barbaro extends Jugador implements Serializable{
     
-    private static final long SerialVersionUID = 343L;
+    //private static final long SerialVersionUID = 343L;
     Random r = new Random();
     private int ac = 65;
     private int cs = 93;
@@ -20,6 +20,10 @@ public class Barbaro extends Jugador implements Serializable{
     private String arma;
     private int xp;
     private String abilidad;
+
+    public Barbaro(String nombre, String nacionalidad, String raza, String tipo, String descripcion, double estatura, int anos, double peso, int hp) {
+        super(nombre, nacionalidad, raza, tipo, descripcion, estatura, anos, peso, hp);
+    }
 
     public Barbaro(String nombre, String nacionalidad, String raza, String tipo, String descripcion, double estatura, int anos, double peso, int hp, String arma, int xp, String abilidad) {
         super(nombre, nacionalidad, raza, tipo, descripcion, estatura, anos, peso, hp);

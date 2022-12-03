@@ -14,7 +14,7 @@ import java.util.ArrayList;
  * @author Kenneth
  */
 public class admin_jugador {
-
+    
     ArrayList<Jugador> jugadores = new ArrayList();
     private File archivo = null;
 
@@ -82,7 +82,7 @@ public class admin_jugador {
         ObjectOutputStream bw = null;
 
         try {
-            fw = new FileOutputStream(archivo);
+            fw = new FileOutputStream(archivo, false);
             bw = new ObjectOutputStream(fw);
             for (Jugador t : jugadores) {
                 bw.writeObject(t);
